@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IRCTC Registration</title>
+</head>
+<body>
+    <h2> IRCTC Individual Registration</h2>
+    <form action="/submit" method="post">
+        <fieldset>
+            <legend>Login Details</legend>
+            User ID: <input type="text" name="userid" required><br>
+            Password: <input type="password" name="password" required><br>
+            Confirm Password: <input type="password" name="confirm_password" required><br>
+            Security Question:
+            <select name="security_question">
+                <option value="pet_name">What is your pet name?</option>
+                <option value="birth_city">What is your birth city?</option>
+            </select><br>
+            Security Answer: <input type="text" name="security_answer" required><br>
+            Preferred Language:
+            <select name="language">
+                <option value="english">English</option>
+                <option value="hindi">Hindi</option>
+            </select>
+        </fieldset>
+
+        <fieldset>
+            <legend>Personal Details</legend>
+            First Name: <input type="text" name="first_name" required><br>
+            Middle Name: <input type="text" name="middle_name">(optional)<br>
+            Last Name: <input type="text" name="last_name"><br>
+            Gender:
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female<br>
+            Marital Status:
+            <input type="radio" name="marital_status" value="married"> Married
+            <input type="radio" name="marital_status" value="unmarried"> Unmarried<br>
+            Date of Birth: <input type="date" name="dob"><br>
+            Occupation:
+            <select name="occupation">
+                <option value="public">Public</option>
+                <option value="private">Private</option>
+                <option value="student">Student</option>
+            </select><br>
+            Aadhaar No: <input type="text" name="aadhaar">(optional)<br>
+            PAN No: <input type="text" name="pan">(optional)<br>
+            Email: <input type="email" name="email" required><br>
+            Mobile: <input type="tel" name="mobile" required><br>
+            Nationality:
+            <select name="nationality">
+                <option value="india">India</option>
+            </select><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Residential Address</legend>
+            Flat/Block No.: <input type="text" name="flat"><br>
+            Street: <input type="text" name="street"><br>
+            Area/Locality: <input type="text" name="locality"><br>
+            Country:
+            <select name="country">
+                <option value="india">India</option>
+            </select><br>
+            Pin Code: <input type="text" name="pincode"><br>
+            State: <input type="text" name="state"><br>
+            City/Town: <input type="text" name="city"><br>
+            Post Office: <input type="text" name="post_office"><br>
+            Phone: <input type="tel" name="phone" placeholder="e.g.,980+"><br>
+        </fieldset>
+
+        <fieldset>
+
+  <p>Copy Residence to office Address:
+    <input type="radio" name="copy" value="yes"> Yes
+    <input type="radio" name="copy" value="no"> No
+  </p>
+   <label for="capcha"> Type Code shown</label>
+   <input type="text" id="capcha" name="capcha" placeholder="Enter capcha code">    <b>YAD9K</b><br>
+   <caption>capcha letters are case sensitive and to be entered in upper case only</caption>
+  <hr>
+
+  <p><b>Subscription to IRCTC Newsletter / Promotions / IRCTC SBI Card through email / SMS</b></p>
+
+  <p>
+    IRCTC Newsletters: 
+    <input type="radio" name="news" value="yes"> Yes
+    <input type="radio" name="news" value="no"> No
+  </p>
+
+  <p>
+    Commercial Promotions: 
+    <input type="radio" name="promo" value="yes"> Yes
+    <input type="radio" name="promo" value="no"> No
+  </p>
+
+  <p>
+    Please inform me about IRCTC SBI Card through phone:
+    <input type="radio" name="sbi" value="yes"> Yes
+    <input type="radio" name="sbi" value="no"> No
+  </p>
+
+  <p>
+    <input type="submit" value="Submit Registration Form >>>">
+  </p>
